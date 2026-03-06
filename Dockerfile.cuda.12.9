@@ -113,8 +113,6 @@ RUN chmod +x /usr/local/bin/docker-entrypoint.sh \
 
 # Expose port and declare volume for persistence
 EXPOSE 8080
-VOLUME ["/app/data"]
-
 # Start as root to allow user ID changes, entrypoint script will switch users
 # Verify uv is available
 RUN uv --version
